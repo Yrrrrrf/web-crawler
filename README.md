@@ -14,9 +14,12 @@ cargo run src/main.rs  // run main
 ## Development
 - [rust](https://www.rust-lang.org/) as programming language
 - [cargo](https://doc.rust-lang.org/cargo/) as build system and package manager
+- [bevy](https://bevyengine.org/) as game engine (for the GUI).
 
 ----
 ## [License](LICENSE.md)
+This project is licensed under the terms of the [MIT license](https://mit-license.org/)
+
 ## References
 - [Web of Science](https://www.webofknowledge.com/)
 - [Web of Science API](https://developer.clarivate.com/apis/wos)

@@ -2,7 +2,27 @@
 name = "web_crawler"
 version = "0.1.0"
 edition = "2021"
+license = "MIT License"
+keywords = ["web crawler", "web spider", "web scraper"]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["Yrrrrrf"]
+repository = "https://github.com/Yrrrrrf/web-crawler"
+
+exclude = ["resources/data/*"]
+
+
+[profile.dev]
+opt-level = 1  # Optimize for speed in debug mode
+
+
+[profile.dev.package."*"]
+opt-level = 3  # Optimize all dependencies in debug mode
+
 
 [dependencies]
+bevy = {version = "0.9", features = ["dynamic"]}
+rand = {version = "0.8"}  # Random number generator (https://docs.rs/rand/0.8.0/rand/)
+# reqwest = "0.10.0"  # HTTP client (https://docs.rs/reqwest/0.10.0/reqwest/)
+# futures = "0.3.0"  # Async utilities (https://docs.rs/futures/0.3.0/futures/)
+# tokio = { version = "0.2.0", features = ["full"] }  # Async runtime (https://docs.rs/tokio/0.2.0/tokio/)
+# serde = { version = "1.0.0", features = ["derive"] }  # Serialization (https://docs.serde.rs/serde/)
